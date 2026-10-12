@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.employee-form {
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 25px;
+}
+
+#employeeForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #333333;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.success {
+    color: #16803c;
+}
+
+.error {
+    color: #c62828;
+}
+
+.employee-section h2 {
+    margin-bottom: 15px;
+}
+
+#employeeCount {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 15px;
+}
+
+#employeeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.employee-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.employee-card p {
+    margin: 0 0 12px;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
+.employee-card p:last-of-type {
+    margin-bottom: 18px;
+}
+
+.employee-card button {
+    background-color: #d93025;
+}
+
+.employee-card button:hover {
+    background-color: #b71c1c;
+}
+
+.empty-message {
+    color: #777777;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    #employeeForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    #addUser {
+        width: 100%;
+    }
+
+    .employee-card {
+        max-width: 100%;
+    }
+}

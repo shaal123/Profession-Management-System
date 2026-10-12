@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <section class="employee-form">
+            <h2>New Employees</h2>
+
+            <form id="employeeForm">
+                <div class="form-group">
+                    <label for="name">Enter Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter Name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="profession">Enter Profession</label>
+                    <input
+                        type="text"
+                        id="profession"
+                        placeholder="Enter Profession"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Enter Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Enter Age"
+                        min="1"
+                        max="120"
+                        step="1"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="addUser">
+                    Add User
+                </button>
+            </form>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="employee-section">
+            <h2>Added Employees</h2>
+
+            <p id="employeeCount">You have 0 employees.</p>
+
+            <div id="employeeList">
+                <p class="empty-message">No employees added yet.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
